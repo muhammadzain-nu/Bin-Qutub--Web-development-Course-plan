@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Char & Cheese — Craft Burger Co.</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= TOP TICKER ================= -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>🔥 FLAME-GRILLED SINCE THE FIRST BITE</span>
+    <span>★</span>
+    <span>BUILD YOUR OWN BEAST</span>
+    <span>★</span>
+    <span>FREE PICKUP · NO DC ON ONLINE ORDERS</span>
+    <span>★</span>
+    <span>PLATINUM, PREMIUM & BRONZE DEALS LIVE NOW</span>
+    <span>★</span>
+    <span>🔥 FLAME-GRILLED SINCE THE FIRST BITE</span>
+    <span>★</span>
+    <span>BUILD YOUR OWN BEAST</span>
+    <span>★</span>
+    <span>FREE PICKUP · NO DC ON ONLINE ORDERS</span>
+    <span>★</span>
+    <span>PLATINUM, PREMIUM & BRONZE DEALS LIVE NOW</span>
+    <span>★</span>
+  </div>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <div class="logo">
+      <span class="logo-icon">🍔</span>
+      <span class="logo-text">CHAR<span class="accent-dot">&</span>CHEESE</span>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#builder">Build Yours</a>
+      <a href="#help">Help</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="order-now-btn" onclick="document.getElementById('builder').scrollIntoView({behavior:'smooth'})">Order Now</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-bg-text">SMASH</div>
+  <div class="hero-grid">
+
+    <div class="hero-left">
+      <p class="hero-kicker">— EST. THE MOMENT HUNGER BEGAN —</p>
+      <h1 class="hero-title">
+        Stacked High.<br>
+        <span class="stroke-text">Dripping</span> Flavor.<br>
+        Built <span class="underline-accent">Your</span> Way.
+      </h1>
+      <p class="hero-sub">No fluff, no fillers — just a flame-kissed patty, melting cheese, and a bun that surrenders on the first bite.</p>
+      <div class="hero-buttons">
+        <button class="btn-primary" onclick="document.getElementById('builder').scrollIntoView({behavior:'smooth'})">Build Your Burger</button>
+        <button class="btn-ghost" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">Explore Menu</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">40+</span><span class="stat-label">Topping Combos</span></div>
+        <div class="stat"><span class="stat-num">12</span><span class="stat-label">Signature Burgers</span></div>
+        <div class="stat"><span class="stat-num">4.9★</span><span class="stat-label">Customer Rating</span></div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="burger-fall-wrap">
+        <div class="plate"></div>
+        <div class="burger-fall" id="burgerFall">
+          <div class="layer bun-top">
+            <span class="sesame-seed"></span>
+            <span class="sesame-seed"></span>
+            <span class="sesame-seed"></span>
+            <span class="sesame-seed"></span>
+            <span class="sesame-seed"></span>
+            <span class="sesame-seed"></span>
+            <span class="sesame-seed"></span>
+          </div>
+          <div class="layer lettuce"></div>
+          <div class="layer cheese"></div>
+          <div class="layer patty"></div>
+          <div class="layer tomato"></div>
+          <div class="layer onion"></div>
+          <div class="layer bun-bottom"></div>
+        </div>
+        <div class="splash s1"></div>
+        <div class="splash s2"></div>
+        <div class="splash s3"></div>
+        <div class="splash s4"></div>
+        <div class="splash s5"></div>
+      </div>
+      <div class="hero-menu-card">
+        <h4>Quick Picks</h4>
+        <ul>
+          <li><span>🥑 Avocado Smash</span><strong>Rs 850</strong></li>
+          <li><span>🧀 Triple Cheese Stack</span><strong>Rs 920</strong></li>
+          <li><span>🌶️ Inferno Chicken</span><strong>Rs 790</strong></li>
+        </ul>
+        <a href="#menu" class="card-link">View Full Menu →</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="scroll-cue">
+    <span>SCROLL FOR THE FULL FEAST</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ================= MARQUEE QUOTES ================= -->
+<section class="quote-marquee">
+  <div class="quote-track">
+    <span>"Life is too short for a sad burger."</span>
+    <span>•</span>
+    <span>"Eat with both hands. No exceptions."</span>
+    <span>•</span>
+    <span>"Good things come to those who order."</span>
+    <span>•</span>
+    <span>"A burger a day keeps the bad mood away."</span>
+    <span>•</span>
+    <span>"Life is too short for a sad burger."</span>
+    <span>•</span>
+    <span>"Eat with both hands. No exceptions."</span>
+    <span>•</span>
+    <span>"Good things come to those who order."</span>
+    <span>•</span>
+  </div>
+</section>
+
+<!-- ================= MENU SECTION ================= -->
+<section class="menu-section" id="menu">
+  <div class="section-head">
+    <p class="kicker">— THE LINE-UP —</p>
+    <h2>Pick Your Fighter</h2>
+    <p class="section-sub">Every burger below comes flame-grilled, fully loaded, and ready to ruin your appetite for anything else.</p>
+  </div>
+
+  <div class="menu-grid">
+
+    <div class="menu-card" data-base="Classic Smash" tabindex="0" role="button">
+      <div class="menu-img classic-img"><img src="assets/ClassicCheeseBurger_9.jpg" alt=""></div>
+      <div class="menu-card-body">
+        <div class="menu-card-top">
+          <h3>Classic Smash</h3>
+          <span class="price">Rs 650</span>
+        </div>
+        <p>Single beef patty, cheddar, pickles, onion, classic sauce on a toasted brioche.</p>
+        <div class="tags"><span>Bestseller</span></div>
+        <button class="menu-order-btn" data-base="Classic Smash">Order This 🔥</button>
+      </div>
+    </div>
+
+    <div class="menu-card" data-base="Avocado Smash" tabindex="0" role="button">
+      <div class="menu-img avocado-img"><img src="assets/avacadosmash.jpg" alt=""></div>
+      <div class="menu-card-body">
+        <div class="menu-card-top">
+          <h3>Avocado Smash</h3>
+          <span class="price">Rs 850</span>
+        </div>
+        <p>Beef patty, smashed avocado, pepper-jack, arugula, chipotle mayo.</p>
+        <div class="tags"><span>Fan Favorite</span></div>
+        <button class="menu-order-btn" data-base="Avocado Smash">Order This 🔥</button>
+      </div>
+    </div>
+
+    <div class="menu-card" data-base="Triple Cheese Stack" tabindex="0" role="button">
+      <div class="menu-img cheese-img"><img src="assets/Cheese stack.webp" alt=""></div>
+      <div class="menu-card-body">
+        <div class="menu-card-top">
+          <h3>Triple Cheese Stack</h3>
+          <span class="price">Rs 920</span>
+        </div>
+        <p>Double patty, cheddar, swiss, mozzarella, caramelized onions, brioche bun.</p>
+        <div class="tags"><span>Indulgent</span></div>
+        <button class="menu-order-btn" data-base="Triple Cheese Stack">Order This 🔥</button>
+      </div>
+    </div>
+
+    <div class="menu-card" data-base="Inferno Chicken" tabindex="0" role="button">
+      <div class="menu-img inferno-img"><img src="assets/infernochickcen.webp" alt=""></div>
+      <div class="menu-card-body">
+        <div class="menu-card-top">
+          <h3>Inferno Chicken</h3>
+          <span class="price">Rs 790</span>
+        </div>
+        <p>Crispy chicken thigh, jalapeño, spicy mayo, pepper-jack, slaw.</p>
+        <div class="tags"><span>Spicy</span></div>
+        <button class="menu-order-btn" data-base="Inferno Chicken">Order This 🔥</button>
+      </div>
+    </div>
+
+    <div class="menu-card" data-base="Mushroom Melt" tabindex="0" role="button">
+      <div class="menu-img mushroom-img"><img src="assets/mushroom-swiss-burger-sq.webp" alt=""></div>
+      <div class="menu-card-body">
+        <div class="menu-card-top">
+          <h3>Mushroom Melt</h3>
+          <span class="price">Rs 880</span>
+        </div>
+        <p>Beef patty, swiss cheese, garlic-sautéed mushrooms, truffle aioli.</p>
+        <div class="tags"><span>Chef's Pick</span></div>
+        <button class="menu-order-btn" data-base="Mushroom Melt">Order This 🔥</button>
+      </div>
+    </div>
+
+    <div class="menu-card" data-base="Smoky BBQ Bacon" tabindex="0" role="button">
+      <div class="menu-img bbq-img"><img src="assets/smoky-bbq-double-bacon-burger-109849-1.jpeg" alt=""></div>
+      <div class="menu-card-body">
+        <div class="menu-card-top">
+          <h3>Smoky BBQ Bacon</h3>
+          <span class="price">Rs 950</span>
+        </div>
+        <p>Double patty, smoked bacon, cheddar, onion rings, smoky BBQ glaze.</p>
+        <div class="tags"><span>Loaded</span></div>
+        <button class="menu-order-btn" data-base="Smoky BBQ Bacon">Order This 🔥</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= DEALS SECTION ================= -->
+<section class="deals-section" id="deals">
+  <div class="section-head light">
+    <p class="kicker">— VALUE TIERS —</p>
+    <h2>Combo Deals That Hit Different</h2>
+    <p class="section-sub">From a humble bronze meal to the full platinum spread — pick the deal that matches your hunger level.</p>
+  </div>
+
+  <div class="deals-grid">
+
+    <div class="deal-card bronze">
+      <div class="deal-ribbon">Bronze</div>
+      <h3>Bronze Bite</h3>
+      <p class="deal-price">Rs 750<span>/meal</span></p>
+      <ul>
+        <li>1 Classic Smash Burger</li>
+        <li>Regular Fries</li>
+        <li>Soft Drink (Regular)</li>
+        <li>Pickup or Delivery</li>
+      </ul>
+      <button class="deal-btn" data-base="Classic Smash">Choose Bronze</button>
+    </div>
+
+    <div class="deal-card premium">
+      <div class="deal-ribbon">Premium</div>
+      <h3>Premium Feast</h3>
+      <p class="deal-price">Rs 1,450<span>/meal</span></p>
+      <ul>
+        <li>1 Triple Cheese Stack</li>
+        <li>Loaded Fries</li>
+        <li>Soft Drink (Large)</li>
+        <li>Free Dip Sauce</li>
+        <li>Pickup or Delivery</li>
+      </ul>
+      <button class="deal-btn" data-base="Triple Cheese Stack">Choose Premium</button>
+    </div>
+
+    <div class="deal-card platinum">
+      <div class="deal-ribbon">Platinum</div>
+      <h3>Platinum Throne</h3>
+      <p class="deal-price">Rs 2,300<span>/meal</span></p>
+      <ul>
+        <li>2 Signature Burgers (Any)</li>
+        <li>Loaded Fries + Onion Rings</li>
+        <li>2 Soft Drinks (Large)</li>
+        <li>Dessert of the Day</li>
+        <li>Priority Pickup or Delivery</li>
+      </ul>
+      <button class="deal-btn" data-base="Smoky BBQ Bacon" data-deal="Platinum">Choose Platinum</button>
+    </div>
+
+  </div>
+  <p class="deals-note">All pickup orders carry <strong>no delivery charges (No DC)</strong>. Online delivery charges, if any, are calculated at checkout based on your shared location.</p>
+</section>
+
+<!-- ================= BURGER BUILDER ================= -->
+<section class="builder-section" id="builder">
+  <div class="section-head">
+    <p class="kicker">— MAKE IT YOURS —</p>
+    <h2>Build Your Own Burger</h2>
+    <p class="section-sub">Pick a base, stack your toppings, choose how it arrives, and tell us how you're paying. Simple as that.</p>
+  </div>
+
+  <div class="builder-wrap">
+
+    <!-- LEFT: BUILDER FORM -->
+    <div class="builder-form">
+
+      <div class="builder-block">
+        <h4><span class="step-num">1</span> Choose Your Base Burger</h4>
+        <div class="option-grid" id="baseOptions">
+          <label class="option-pill">
+            <input type="radio" name="base" value="Classic Smash" data-price="650" checked>
+            <span>Classic Smash <small>Rs 650</small></span>
+          </label>
+          <label class="option-pill">
+            <input type="radio" name="base" value="Avocado Smash" data-price="850">
+            <span>Avocado Smash <small>Rs 850</small></span>
+          </label>
+          <label class="option-pill">
+            <input type="radio" name="base" value="Triple Cheese Stack" data-price="920">
+            <span>Triple Cheese Stack <small>Rs 920</small></span>
+          </label>
+          <label class="option-pill">
+            <input type="radio" name="base" value="Inferno Chicken" data-price="790">
+            <span>Inferno Chicken <small>Rs 790</small></span>
+          </label>
+          <label class="option-pill">
+            <input type="radio" name="base" value="Mushroom Melt" data-price="880">
+            <span>Mushroom Melt <small>Rs 880</small></span>
+          </label>
+          <label class="option-pill">
+            <input type="radio" name="base" value="Smoky BBQ Bacon" data-price="950">
+            <span>Smoky BBQ Bacon <small>Rs 950</small></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="builder-block">
+        <h4><span class="step-num">2</span> Extra Toppings <small class="muted">(Rs 50 each)</small></h4>
+        <div class="option-grid checkbox-grid" id="toppingOptions">
+          <label class="option-pill"><input type="checkbox" value="Extra Cheese" data-price="50"><span>🧀 Extra Cheese</span></label>
+          <label class="option-pill"><input type="checkbox" value="Bacon" data-price="50"><span>🥓 Bacon</span></label>
+          <label class="option-pill"><input type="checkbox" value="Jalapeños" data-price="50"><span>🌶️ Jalapeños</span></label>
+          <label class="option-pill"><input type="checkbox" value="Caramelized Onions" data-price="50"><span>🧅 Caramelized Onions</span></label>
+          <label class="option-pill"><input type="checkbox" value="Avocado" data-price="50"><span>🥑 Avocado</span></label>
+          <label class="option-pill"><input type="checkbox" value="Fried Egg" data-price="50"><span>🍳 Fried Egg</span></label>
+          <label class="option-pill"><input type="checkbox" value="Mushrooms" data-price="50"><span>🍄 Mushrooms</span></label>
+          <label class="option-pill"><input type="checkbox" value="Onion Rings" data-price="50"><span>🍩 Onion Rings</span></label>
+        </div>
+      </div>
+
+      <div class="builder-block">
+        <h4><span class="step-num">3</span> Sauce</h4>
+        <div class="option-grid" id="sauceOptions">
+          <label class="option-pill"><input type="radio" name="sauce" value="Classic Burger Sauce" checked><span>Classic Sauce</span></label>
+          <label class="option-pill"><input type="radio" name="sauce" value="Chipotle Mayo"><span>Chipotle Mayo</span></label>
+          <label class="option-pill"><input type="radio" name="sauce" value="Truffle Aioli"><span>Truffle Aioli</span></label>
+          <label class="option-pill"><input type="radio" name="sauce" value="Smoky BBQ"><span>Smoky BBQ</span></label>
+          <label class="option-pill"><input type="radio" name="sauce" value="Spicy Mayo"><span>Spicy Mayo</span></label>
+        </div>
+      </div>
+
+      <div class="builder-block">
+        <h4><span class="step-num">4</span> How Should It Arrive?</h4>
+        <div class="option-grid" id="fulfillmentOptions">
+          <label class="option-pill"><input type="radio" name="fulfillment" value="Pickup (No DC)" checked><span>🏃 Pickup <small>No DC</small></span></label>
+          <label class="option-pill"><input type="radio" name="fulfillment" value="Home Delivery"><span>🚴 Home Delivery</span></label>
+        </div>
+
+        <div id="locationBlock" class="location-block hidden">
+          <label for="locationInput" class="loc-label">Share Your Delivery Location</label>
+          <div class="location-row">
+            <input type="text" id="locationInput" placeholder="e.g. House 12, Street 4, Block B, Karachi" />
+            <button type="button" id="shareLocBtn" class="loc-btn">📍 Use Current Location</button>
+          </div>
+          <p class="loc-status" id="locStatus"></p>
+        </div>
+      </div>
+
+      <div class="builder-block">
+        <h4><span class="step-num">5</span> Payment Method</h4>
+        <div class="option-grid" id="paymentOptions">
+          <label class="option-pill"><input type="radio" name="payment" value="Cash on Delivery / Pickup" checked><span>💵 Cash</span></label>
+          <label class="option-pill"><input type="radio" name="payment" value="Debit / Credit Card"><span>💳 Card</span></label>
+          <label class="option-pill"><input type="radio" name="payment" value="Mobile Wallet (EasyPaisa/JazzCash)"><span>📱 Mobile Wallet</span></label>
+          <label class="option-pill"><input type="radio" name="payment" value="Bank Transfer"><span>🏦 Bank Transfer</span></label>
+        </div>
+      </div>
+
+      <div class="builder-block">
+        <h4><span class="step-num">6</span> Quantity</h4>
+        <div class="qty-control">
+          <button type="button" id="qtyMinus" class="qty-btn">−</button>
+          <span id="qtyValue">1</span>
+          <button type="button" id="qtyPlus" class="qty-btn">+</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT: ORDER SUMMARY -->
+    <aside class="order-summary" id="orderSummary">
+      <h3>Your Order</h3>
+      <div class="summary-line"><span>Burger</span><strong id="sumBase">Classic Smash</strong></div>
+      <div class="summary-line"><span>Toppings</span><strong id="sumToppings">None</strong></div>
+      <div class="summary-line"><span>Sauce</span><strong id="sumSauce">Classic Burger Sauce</strong></div>
+      <div class="summary-line"><span>Fulfillment</span><strong id="sumFulfillment">Pickup (No DC)</strong></div>
+      <div class="summary-line"><span>Location</span><strong id="sumLocation">—</strong></div>
+      <div class="summary-line"><span>Payment</span><strong id="sumPayment">Cash on Delivery / Pickup</strong></div>
+      <div class="summary-line"><span>Quantity</span><strong id="sumQty">1</strong></div>
+      <hr>
+      <div class="summary-total"><span>Total</span><strong id="sumTotal">Rs 650</strong></div>
+
+      <button class="place-order-btn" id="placeOrderBtn">Place My Order 🔥</button>
+      <p class="order-warning">⚠️ Once placed, your order <strong>cannot be canceled</strong> and burger choices <strong>cannot be changed</strong>. Choose wisely, champ.</p>
+    </aside>
+
+  </div>
+</section>
+
+<!-- ================= ORDER STATUS POPUP (Animated Chef) ================= -->
+<div class="popup-overlay" id="popupOverlay">
+  <div class="chef-popup">
+    <button class="popup-close" id="popupClose" aria-label="Close">×</button>
+
+    <div class="chef-anim-wrap">
+      <div class="chef-figure" id="chefFigure">
+        <div class="chef-hat"></div>
+        <div class="chef-face">
+          <div class="chef-eye left"></div>
+          <div class="chef-eye right"></div>
+          <div class="chef-mouth"></div>
+        </div>
+        <div class="chef-body">
+          <div class="chef-arm left"></div>
+          <div class="chef-arm right"></div>
+        </div>
+        <div class="chef-pan">🍳</div>
+      </div>
+      <div class="steam s1"></div>
+      <div class="steam s2"></div>
+      <div class="steam s3"></div>
+    </div>
+
+    <h3 id="popupTitle">Order Received! Chef is firing up the grill 👨‍🍳</h3>
+    <p class="popup-order-id" id="popupOrderId"></p>
+
+    <div class="status-timeline">
+      <div class="status-step active" id="stepCooking">
+        <div class="status-icon">🔥</div>
+        <div class="status-text">
+          <strong>Cooking</strong>
+          <span id="cookingTime">Estimated: 12 mins</span>
+        </div>
+      </div>
+      <div class="status-step" id="stepWay">
+        <div class="status-icon">🛵</div>
+        <div class="status-text">
+          <strong>On the Way</strong>
+          <span id="wayTime">Estimated: 25 mins total</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-meta">
+      <p><strong>Method:</strong> <span id="popupFulfillment"></span></p>
+      <p><strong>Payment:</strong> <span id="popupPayment"></span></p>
+    </div>
+
+    <button class="popup-ok-btn" id="popupOkBtn">Got It, I'll Wait 😋</button>
+  </div>
+</div>
+
+<!-- ================= TESTIMONIAL / QUOTE STRIP ================= -->
+<section class="testimonial-section">
+  <div class="testimonial-card">
+    <p class="testimonial-text">"I came for a burger, I left with a religion. The cheese pull alone deserves a standing ovation."</p>
+    <p class="testimonial-author">— Sana K., Karachi</p>
+  </div>
+  <div class="testimonial-card">
+    <p class="testimonial-text">"Ordered the Platinum deal on a whim. Now it's a Friday tradition. My wallet is fine with it."</p>
+    <p class="testimonial-author">— Bilal R., Lahore</p>
+  </div>
+  <div class="testimonial-card">
+    <p class="testimonial-text">"The chef animation while waiting genuinely made the 20 minutes feel like 5. Smart and tasty."</p>
+    <p class="testimonial-author">— Ayesha M., Islamabad</p>
+  </div>
+</section>
+
+<!-- ================= FEEDBACK SECTION ================= -->
+<section class="feedback-section" id="feedback">
+  <div class="section-head light">
+    <p class="kicker">— AFTER THE LAST BITE —</p>
+    <h2>Tell Us How It Went</h2>
+    <p class="section-sub">Your burger's already history (and your order can't be changed now), but your feedback shapes the next one. It's saved right here on this device.</p>
+  </div>
+
+  <div class="feedback-wrap">
+    <div class="feedback-form">
+      <label for="feedbackName">Your Name</label>
+      <input type="text" id="feedbackName" placeholder="e.g. Ahmed">
+
+      <label>Rating</label>
+      <div class="star-rating" id="starRating">
+        <span data-value="1">★</span>
+        <span data-value="2">★</span>
+        <span data-value="3">★</span>
+        <span data-value="4">★</span>
+        <span data-value="5">★</span>
+      </div>
+
+      <label for="feedbackText">Your Feedback</label>
+      <textarea id="feedbackText" rows="4" placeholder="Tell us about the taste, the wait, the chef animation, anything!"></textarea>
+
+      <button class="submit-feedback-btn" id="submitFeedbackBtn">Submit Feedback</button>
+      <p class="feedback-status" id="feedbackStatus"></p>
+    </div>
+
+    <div class="feedback-list-wrap">
+      <h4>Recent Feedback <small>(stored on this device)</small></h4>
+      <div class="feedback-list" id="feedbackList">
+        <p class="no-feedback" id="noFeedbackMsg">No feedback yet. Be the first to roast (or toast) us!</p>
+      </div>
+      <button class="clear-feedback-btn" id="clearFeedbackBtn">Clear All Feedback</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HELP / FAQ SECTION ================= -->
+<section class="help-section" id="help">
+  <div class="section-head">
+    <p class="kicker">— NEED A HAND? —</p>
+    <h2>Help & Frequently Asked Questions</h2>
+  </div>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q">Can I cancel my order after placing it? <span class="faq-toggle">+</span></button>
+      <div class="faq-a"><p>No. Once an order is placed, it goes straight to the kitchen and cannot be canceled. Please double-check your selections before hitting "Place My Order."</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Can I change my burger choices after ordering? <span class="faq-toggle">+</span></button>
+      <div class="faq-a"><p>Unfortunately not. Your burger is built fresh the moment your order is confirmed, so toppings, sauce, and base selections are locked in.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">How does pickup work, and is it really free? <span class="faq-toggle">+</span></button>
+      <div class="faq-a"><p>Yes — all pickup orders carry <strong>No DC (no delivery charges)</strong>. Simply select "Pickup" during checkout, and we'll prep your order for collection at our counter.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">What payment methods are accepted? <span class="faq-toggle">+</span></button>
+      <div class="faq-a"><p>We accept Cash, Debit/Credit Card, Mobile Wallets (EasyPaisa/JazzCash), and Bank Transfer. Choose your preferred method at checkout.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">How do I leave feedback after my order? <span class="faq-toggle">+</span></button>
+      <div class="faq-a"><p>Scroll down to the "Tell Us How It Went" section, rate us, write your thoughts, and submit. It's saved locally on your device for our team to review.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer" id="privacy">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div class="logo">
+        <span class="logo-icon">🍔</span>
+        <span class="logo-text">CHAR<span class="accent-dot">&</span>CHEESE</span>
+      </div>
+      <p>Flame-grilled, fully loaded, unapologetically messy. Karachi's favorite burger joint, made for people who don't do "boring."</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#deals">Deals</a>
+      <a href="#builder">Build Your Burger</a>
+      <a href="#help">Help</a>
+    </div>
+    <div class="footer-col">
+      <h4>Privacy & Policies</h4>
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#privacy">Terms of Service</a>
+      <a href="#privacy">Refund Policy</a>
+      <a href="#privacy">Order Cancellation Policy</a>
+    </div>
+    <div class="footer-col">
+      <h4>Privacy Policy Summary</h4>
+      <p class="privacy-text">We only use your shared location to fulfill delivery orders and never share it with third parties. Feedback you submit is stored locally in your browser's storage and is never transmitted to our servers without your consent. Payment details are never stored on this device.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Char & Cheese Burger Co. All rights reserved. Made with 🔥, cheese, and zero regrets.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
